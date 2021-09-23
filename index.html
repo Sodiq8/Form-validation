@@ -9,39 +9,29 @@
  <link rel="stylesheet" href="index.css">
 </head>
 <body>
- <div class="container">
-  <div class="header">
-   <h2>Register With Us</h2>
-  </div>
-   <form class="form" id="form">
-
-    <div class="form-control" success-input>
-     <label for="">Username</label>
-     <input type="text" placeholder="Enter username" id="username">
-     <div class="msg"></div>
-    </div>
-
-     <div class="form-control">
-      <label for="">Email</label>
-      <input type="email" placeholder="Enter email" id="email">
-      <div class="msg"></div>
-     </div>
-
-      <div class="form-control">
-       <label for="">Password</label>
-       <input type="password" placeholder="Enter password" id="password">
-       <div class="msg"></div>
-      </div>
-
-       <div class="form-control">
-        <label for="">Confirm Password</label>
-        <input type="password" placeholder="Enter password again" id="password">
-        <small>Error Message</small>
-       </div>
-
-       <button class="btn" type="submit" value="submit">Submit</button>
-   </form>
- </div>
+ <h1 id="signup"> Sign Up</h1>
+<h4> ---Sign up with</h4>
+<!--img src="form.PNG" alt="failedtoload" class="imgposition">-->
+<h4 class="sidename signup"> Sign up with Goggle</h4>
+<h4 class="sidename signup"> Sign up with Facebook</h4>
+  <h4>Firstname Lastname</h4>  
+  <!--<h4 class="sidename">Last Name</h4>-->
+  <input type="text" id="firstname" name="firstname" value="Lora" required>
+     <br> <p style="color:red" id="fn"></p>
+  <input type="text" id="lastname" name="lastname" value="Ipsum" required>
+     <br> <p style="color:red" id="ln"></p>
+  <h4>Email</h4>
+  <input type="text" id="email" name="email" class="btnwidth" value="@gmail.com" required>
+     <br> <p style="color:red" id="em"></p>
+  <h4>Password</h4>
+  <input type="password" id="password1" class="btnwidth" name="password" placeholder="****" required>
+     <br> <p style="color:red" id="p1"></p>
+  <h4>Confirm Password</h4>
+  <input type="password" id="password2" class=" btnwidth" name="password" placeholder="****" required>
+   <br> <p style="color:red" id="p2"></p>
+  <input type="checkbox" required> I've read and agree with terms of service and our privacy policy. <br>
+  <button onclick="tocheck()">Submit</button>
+</body>
 
 <script src="main.js">
 
